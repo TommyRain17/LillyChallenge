@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- imports the StyleSheet and creates the web-page-->>
+
+
+<body>
+    <div class="disclaimer" id="disclaimer">
+        Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
+    </div>
+<!-- Adds Medicine disclaimer-->>
+
+
+<body>
+    <h1>Medicine List</h1>
+    <table id="medicineTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="medicines">
+          <tr>
+            <td colspan="2">
+                loading...
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+<!--display data fetched in backedend in a table-->>
+
+
+    <form id="add-medicine">
+        <input type="text" name="name" required="true" placeholder="Medicine Name.."/>
+        <input type="number" name="price" step="0.01" required="true" placeholder="Price.."/>
+        <button type="submit"> Add Medicine </button>
+    </form>
+
+
+
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
