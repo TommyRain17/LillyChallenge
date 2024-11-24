@@ -6,14 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- imports the StyleSheet and creates the web-page-->>
+<!-- imports the StyleSheet and creates the web-page-->
 
 
 <body>
     <div class="disclaimer" id="disclaimer">
         Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
     </div>
-<!-- Adds Medicine disclaimer-->>
+<!-- Adds Medicine disclaimer-->
 
 
 <body>
@@ -34,14 +34,42 @@
         </tbody>
     </table>
 
-<!--display data fetched in backedend in a table-->>
+<!--display data fetched in backedend in a table-->
 
+<group>
+    <p1>Add Medicine </p1>
+        <form id="add-medicine">
+            <input type="text" name="name" required="true" placeholder="Medicine Name.."/>
+            <input type="number" name="price" step="0.01" required="true" placeholder="Price.."/>
+            <button type="submit"> Add Medicine </button>
+        </form>
+    <p2> Input the name and price of the medicine you would like to add to the database!</p2>
+</group>
 
-    <form id="add-medicine">
+<group>
+    <p1>Update Medicine </p1>
+    <form id="update-medicine">
         <input type="text" name="name" required="true" placeholder="Medicine Name.."/>
         <input type="number" name="price" step="0.01" required="true" placeholder="Price.."/>
-        <button type="submit"> Add Medicine </button>
+        <button type="submit"> Update Medicine </button>
     </form>
+    <p2> Input the name and the new price of which you want to update the price of!</p2>
+
+</group>
+
+<group>
+    <p1>Delete Medicine</p1>
+    <form id="delete-medicine">
+        <input type="text" name="name" required="true" placeholder="Medicine Name.."/>
+        <button type="submit"> Delete Medicine </button>
+    </form>
+    <p2> Input the name of the medicine you would like to delete from the database!</p2>
+
+</group>
+
+<!--creates input box sections and groups them for positioning-->
+
+
 
 
 
@@ -50,4 +78,3 @@
     
 </body>
 </html>
-
