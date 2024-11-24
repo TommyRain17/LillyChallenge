@@ -22,7 +22,7 @@ I am also proud of my get_average_med_price function as it was the only endpoint
 ## Problems Faced
 my original problem came during the very beggining of the project. After cloning the repositry I had to read up on postman to understand how it worked and found setting up my venv was difficult and new but managed to get it set up.
 
-Then had some issues with the postman
+Then had some issues with the postman and found that the update didnt always show the correct output without restarting the local server however once this was ironed out I felt strongly
 
 ## Evaluation
 *How did you feel about the challenge overall? Did some parts go better than others? Did you run out of time? If you were to do this again, and were given more time, what would you do differently?*
