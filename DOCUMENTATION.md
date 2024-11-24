@@ -19,10 +19,21 @@ More specifically my renderMedicines function which take the data of the json da
 
 I am also proud of my get_average_med_price function as it was the only endpoint I created myself. Not only was this somthing I had not done in python before but it was also the one part of the project which stretched from the backend in the database right the way through to the user end of the frontend which was solely programmed by me. Making me proud that I proved to myself I could do every part of the project despite finding it intimidating at the start.
 
-## Problems Faced
-my original problem came during the very beggining of the project. After cloning the repositry I had to read up on postman to understand how it worked and found setting up my venv was difficult and new but managed to get it set up.
+A small extra I added was a loading column in the HTML table in the case that the data had not yet loaded or the server had not yet connected.
 
-Then had some issues with the postman and found that the update didnt always show the correct output without restarting the local server however once this was ironed out I felt strongly
+## Problems Faced
+My original problem came during the very beggining of the project. After cloning the repositry I had to read up on postman to understand how it worked and found setting up my venv was difficult and new but managed to get it set up.
+
+Then had some issues with the postman and found that the update didnt always show the correct output without restarting the local server however once this was ironed out I felt much more confident in how the project could go and had a much stronger understanding of the use of fetch statements in JavaScript.
+
+JavaScript was the biggest problem I faced. I have used JavaScript before but only minimally and never to this extent so there was a bit to learn. I originally tried to tackle the problem by diving head first into the JavaScript but realised I needed to take a step back and refocus instead of going straight in. I then realised how Postman would be important to help me complete the challenge and decided to put some time into the endpoints instead. Which in the end I found was massively helpful and I was able to complete the challenge.
+
+I ran into a couple of problems when trying to create and test my own endpoint in postman with the server but quickly figured it out. The most notable of which was the "internal server error" which I tried to debug myself and then using the internet. However by the time I had switched back on to VScode my endpoint was working and producing the right output!
 
 ## Evaluation
 *How did you feel about the challenge overall? Did some parts go better than others? Did you run out of time? If you were to do this again, and were given more time, what would you do differently?*
+
+I found the problem to start with quite daunting as it was unique and different to any problems id faced before. However the novelty of the new challenge also gave me an energy which I took into this challenge that gave me a real desire to overcome it. I found that to get started was difficult but once I got going I found it quite enjoyable to create something in a unique way to anything id done previously. 
+I ended up going over the time but found it was necessary to grasp a full understanding of the challenge as it was not my strongest area when I started, however I now feel much more confident with the challenge and how to tackle and overcome future similair challenges.
+If I had more time I would like to have made a couple key changes. For instance I would have like to have had the numbers in the table better formatted as a currency as they currently only show the significant digits. I would also have liked to have had a feature where null data wasn't shown in the table, however due to time constraints I had to settle with a fallback which showed N/A if there was no data.
+Overall I massively enjoyed working on this challenge and feel my abilities as a software developer impoved significantly throughout the process. Despite not instantaneously knowing how to solve the problem I put in the work to solve the problems I faced and create a functional solution - which I am proud of!
