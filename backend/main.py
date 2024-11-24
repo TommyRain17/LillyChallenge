@@ -7,6 +7,7 @@ and create a new medicine.
 Endpoints:
 - GET /medicines: Retrieve all medicines from the data.json file.
 - GET /medicines/{name}: Retrieve a single medicine by name from the data.json file.
+- GET /average: Retrieve the average price of all medications in the data.json file.
 - POST /create: Create a new medicine with a specified name and price.
 - POST /update: Update the price of a medicine with a specified name.
 - DELETE /delete: Delete a medicine with a specified name.
@@ -16,6 +17,7 @@ Functions:
 - create_med: Reads the data.json file, adds a new medicine, and writes the updated data back to the file.
 - update_med: Reads the data.json file, updates the price of a medicine, and writes the updated data back to the file.
 - delete_med: Reads the data.json file, deletes a medicine, and writes the updated data back to the file.
+- get_average_med_price: reads the jason file, totals the cost of each medicine and returns the total divided by the amount of medicines, rounded to two D.P
 Usage:
 Run this module directly to start the FastAPI application.
 """
@@ -126,5 +128,24 @@ def delete_med(name: str = Form(...)):
 
 # Add your average function here
 
+@app.get("/average")
+def get_average_med_price():
+    """
+    This function reads the data.json file and returns an average of the medicines prices.
+    Returns:
+        dict: An average price of medicines
+    """
+    with open('data.json') as meds:
+        data = json.load(meds)
+        total = 0
+        amount = 0
+        for med in data["medicines"]:
+            if med["price"] != None:
+                total = total + float(med["price"])
+                amount +=1
+        average = round(total/amount, 2)
+    return average
+
 if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     uvicorn.run(app, host="0.0.0.0", port=8000)
