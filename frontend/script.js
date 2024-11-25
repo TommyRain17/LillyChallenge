@@ -69,7 +69,7 @@ async function load() {
     renderMedicines()
     document.getElementById("add-medicine").addEventListener("submit", createMedicine)
     document.getElementById("delete-medicine").addEventListener("submit", deleteMedicine)
-    document.getElementById("delete-medicine").addEventListener("submit", updateMedicine)
+    document.getElementById("update-medicine").addEventListener("submit", updateMedicine)
 }
 
 load()
